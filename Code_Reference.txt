@@ -1,0 +1,546 @@
+Style.CSS
+---------
+
+/* Reset margins and set a universal font style for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font family for consistent text appearance */
+    background-color: #fff; /* White background for clean design */
+    color: #333; /* Dark gray text color for readability */
+}
+
+/* Styling for the header and footer */
+.header, .footer {
+    background-color: #f8f8f8; /* Light gray background for contrast */
+    padding: 20px; /* Add space inside the header and footer */
+    text-align: center; /* Center the text inside these sections */
+}
+
+/* Style for navigation links inside the header */
+.nav a {
+    margin: 0 10px; /* Horizontal spacing between links */
+    text-decoration: none; /* Remove underline from links */
+    color: #444; /* Medium gray color for links */
+}
+
+/* Hero section styling */
+.hero {
+    position: relative; /* Allows positioning of hero-text inside hero-img */
+    text-align: center; /* Centers text content */
+}
+
+/* Image in the hero section */
+.hero-img {
+    width: 100%; /* Make the image span the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Text overlay in the hero section */
+.hero-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to truly center */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Add space around the text */
+}
+
+/* Features section styling */
+.features {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute space evenly between feature items */
+    padding: 20px; /* Add space around the section */
+}
+
+/* Style for individual feature items */
+.feature {
+    text-align: center; /* Center-align content within each feature */
+}
+
+/* Form container styling for forms and contact sections */
+.form-container, .contact-form {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center form horizontally */
+    margin: 20px; /* Add spacing around the form container */
+}
+
+/* Styling for forms inside the form container */
+form {
+    display: flex; /* Use flexbox for vertical layout */
+    flex-direction: column; /* Stack form elements vertically */
+    width: 300px; /* Set a fixed width for the form */
+}
+
+/* Input fields and text areas inside forms */
+input, textarea {
+    margin: 10px 0; /* Add vertical spacing between fields */
+    padding: 10px; /* Add inner padding for better usability */
+    font-size: 16px; /* Set font size for text fields */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #f06292; /* Bright pink background for the navbar */
+    padding: 10px 20px; /* Add space inside the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align the navigation links */
+    align-items: center; /* Center align content vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Links inside the navbar */
+.nav-links {
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Add spacing between links */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Individual navigation links */
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text for contrast against the navbar background */
+    font-size: 16px; /* Set font size for readability */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 15px; /* Add inner spacing for better usability */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover animations */
+}
+
+/* Hover effects for navigation links */
+.nav-links a:hover {
+    background-color: #e64a3e; /* Darker pink background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Styling for buttons */
+.btn {
+    background-color: #f06292; /* Pink background for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add inner spacing */
+    color: white; /* White text for contrast */
+    font-size: 16px; /* Set font size for readability */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth animations */
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+    background-color: #e64a3e; /* Darker pink on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Product list styling */
+.product-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center align the product cards */
+    gap: 20px; /* Add spacing between product cards */
+    padding: 20px; /* Add space around the section */
+    background-color: #f9f9f9; /* Light gray background for contrast */
+}
+
+/* Individual product cards */
+.product-card {
+    background-color: #fff; /* White background for a clean look */
+    border: 1px solid #ddd; /* Light gray border for separation */
+    border-radius: 10px; /* Rounded corners for modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center-align content */
+    max-width: 250px; /* Set a fixed width for uniform layout */
+    padding: 15px; /* Add padding inside the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+}
+
+/* Hover effects for product cards */
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Images inside product cards */
+.product-card img {
+    max-width: 100%; /* Make image responsive */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Keep image proportions while cropping */
+    border-radius: 10px 10px 0 0; /* Rounded top corners for images */
+}
+
+/* Product name styling */
+.product-card h3 {
+    font-size: 18px; /* Font size for product name */
+    margin: 10px 0; /* Vertical spacing around the name */
+}
+
+/* Product price styling */
+.product-card p {
+    font-size: 16px; /* Font size for product price */
+    color: #666; /* Gray color for price text */
+    margin-bottom: 15px; /* Spacing below the price text */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Adjust alignment for smaller screens */
+    .features, .product-list {
+        justify-content: space-evenly;
+    }
+
+    /* Slightly smaller product cards for tablets */
+    .product-card {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack features vertically */
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Stack product cards vertically */
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Full-width product cards on mobile */
+    .product-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Stack navigation links vertically */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Adjust link font size for smaller screens */
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Adjust button size for smaller screens */
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust hero text size and spacing for small screens */
+    .hero-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Full-width forms for mobile */
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust input fields for mobile */
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
+
+SCRIPT.js 
+----------
+// Login Form Validation
+const loginForm = document.getElementById("loginForm"); // Get the login form by its ID
+
+if (loginForm) {
+  // Add an event listener for the login form's submit event
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the form from refreshing the page on submission
+    alert("Login Successful!"); // Display a success alert to the user
+    loginForm.reset(); // Reset the form fields after submission
+  });
+}
+
+// Signup Form Validation
+const signupForm = document.getElementById("signupForm"); // Get the signup form by its ID
+
+if (signupForm) {
+  // Add an event listener for the signup form's submit event
+  signupForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the form from refreshing the page on submission
+    alert("Signup Successful!"); // Display a success alert to the user
+    signupForm.reset(); // Reset the form fields after submission
+  });
+}
+
+// Contact Form Validation
+const contactForm = document.getElementById("contactForm"); // Get the contact form by its ID
+
+if (contactForm) {
+  // Add an event listener for the contact form's submit event
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the form from refreshing the page on submission
+
+    // Display a success message to the user indicating the message was sent successfully
+    alert("Your message has been sent successfully!");
+    contactForm.reset(); // Clear the form fields after submission
+  });
+}
+
+
+
+
+index.html
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+  <title>GlowStore - Home</title> <!-- Sets the title of the webpage -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar"> <!-- Navigation bar for main links -->
+    <nav class="nav-links"> <!-- Container for navigation links -->
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+      <a href="products.html">Products</a> <!-- Link to the products page -->
+      <a href="contact.html">Contact</a> <!-- Link to the contact page -->
+      <a href="login.html">Login</a> <!-- Link to the login page -->
+      <a href="signup.html">Sign Up</a> <!-- Link to the signup page -->
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero"> <!-- Main banner area to welcome visitors -->
+    <img src="/images/banner.jpg" alt="Beauty Banner" class="hero-img"> <!-- Banner image -->
+    <div class="hero-text"> <!-- Text overlay on the banner -->
+      <h1>Welcome to GlowStore</h1> <!-- Heading text -->
+      <p>Your one-stop shop for beauty essentials</p> <!-- Subtext -->
+      <a href="products.html" class="btn">Shop Now</a> <!-- Button linking to the products page -->
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features"> <!-- Highlights key features of GlowStore -->
+    <div class="feature"> <!-- Feature #1: Top brands -->
+      <h3>Top Brands</h3>
+      <p>Only the best in cosmetics and skincare</p>
+    </div>
+    <div class="feature"> <!-- Feature #2: Affordable prices -->
+      <h3>Affordable Prices</h3>
+      <p>Luxury for less, delivered to your door</p>
+    </div>
+    <div class="feature"> <!-- Feature #3: Fast shipping -->
+      <h3>Fast Shipping</h3>
+      <p>Get your glow in no time</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer"> <!-- Footer containing copyright information -->
+    <p>&copy; 2025 GlowStore. All rights reserved.</p>
+  </footer>
+
+  <!-- Script Reference -->
+  <script src="js/script.js"></script> <!-- Links to external JavaScript file -->
+</body>
+</html>
+
+
+
+Contact.html
+------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on all devices -->
+  <title>Contact Us - GlowStore</title> <!-- Sets the title of the page -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header"> <!-- Defines the page header -->
+    <h1>Contact Us</h1> <!-- Heading for the contact page -->
+    <nav class="nav"> <!-- Navigation links -->
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+      <a href="products.html">Products</a> <!-- Link to the products page -->
+    </nav>
+  </header>
+
+  <!-- Form Container -->
+  <section class="form-container"> <!-- Section for the contact form -->
+    <form id="contactForm"> <!-- Form element for collecting user input -->
+        <input type="text" id="contactName" placeholder="Your Name" required> <!-- Input field for name -->
+        <input type="email" id="contactEmail" placeholder="Your Email" required> <!-- Input field for email -->
+        <textarea id="contactMessage" placeholder="Your Message" required></textarea> <!-- Textarea for the message -->
+        <button type="submit" class="btn">Send</button> <!-- Submit button -->
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer"> <!-- Footer containing copyright information -->
+    <p>&copy; 2025 GlowStore</p> <!-- Copyright text -->
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script> <!-- Links to the external JavaScript file -->
+</body>
+</html>
+
+
+Login.html
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness for all screen sizes -->
+  <title>Login - GlowStore</title> <!-- Sets the title of the page -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header"> <!-- Defines the page header -->
+    <h1>Login</h1> <!-- Main heading for the login page -->
+    <nav class="nav"> <!-- Navigation links -->
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+      <a href="signup.html">Sign Up</a> <!-- Link to the signup page -->
+    </nav>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="form-container"> <!-- Container for the login form -->
+    <form id="loginForm"> <!-- Form element to handle user login -->
+      <input type="text" id="loginUsername" placeholder="Username" required> <!-- Input field for username -->
+      <input type="password" id="loginPassword" placeholder="Password" required> <!-- Input field for password -->
+      <button type="submit" class="btn">Login</button> <!-- Submit button to log in -->
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer"> <!-- Footer containing copyright information -->
+    <p>&copy; 2025 GlowStore</p> <!-- Copyright notice -->
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script> <!-- Links to the external JavaScript file -->
+</body>
+</html>
+
+
+Products.html
+-------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness for all screen sizes -->
+  <title>Products - GlowStore</title> <!-- Sets the title of the page -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header"> <!-- Page header for navigation and title -->
+    <h1>Products</h1> <!-- Main heading for the products page -->
+    <nav class="nav"> <!-- Navigation links -->
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+    </nav>
+  </header>
+
+  <!-- Product List Section -->
+  <section class="product-list"> <!-- Container for all product cards -->
+    <!-- Product #1 -->
+    <div class="product-card"> <!-- Individual product card -->
+      <img src="/images/lipstick.png" alt="Matte Lipstick"> <!-- Product image -->
+      <h3>Matte Lipstick</h3> <!-- Product name -->
+      <p>Price: ₹399</p> <!-- Product price -->
+      <button class="btn">Add to Cart</button> <!-- Button to add product to cart -->
+    </div>
+
+    <!-- Product #2 -->
+    <div class="product-card"> <!-- Individual product card -->
+      <img src="/images/foundation.jpg" alt="Liquid Foundation"> <!-- Product image -->
+      <h3>Liquid Foundation</h3> <!-- Product name -->
+      <p>Price: ₹799</p> <!-- Product price -->
+      <button class="btn">Add to Cart</button> <!-- Button to add product to cart -->
+    </div>
+
+    <!-- Add more products here -->
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer"> <!-- Footer containing copyright information -->
+    <p>&copy; 2025 GlowStore</p> <!-- Copyright notice -->
+  </footer>
+</body>
+</html>
+
+
+
+Signup.html
+-----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines the character encoding for the webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive for all devices -->
+  <title>Sign Up - GlowStore</title> <!-- Sets the title for the page -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header"> <!-- Page header containing navigation and title -->
+    <h1>Sign Up</h1> <!-- Main heading for the sign-up page -->
+    <nav class="nav"> <!-- Navigation links -->
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+      <a href="login.html">Login</a> <!-- Link to the login page -->
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <section class="form-container"> <!-- Container for the sign-up form -->
+    <form id="signupForm"> <!-- Form for collecting user information -->
+      <input type="text" id="signupUsername" placeholder="Username" required> <!-- Field for entering a username -->
+      <input type="email" id="signupEmail" placeholder="Email" required> <!-- Field for entering an email address -->
+      <input type="password" id="signupPassword" placeholder="Password" required> <!-- Field for entering a password -->
+      <button type="submit" class="btn">Sign Up</button> <!-- Submit button for the form -->
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer"> <!-- Footer containing copyright information -->
+    <p>&copy; 2025 GlowStore</p> <!-- Copyright notice -->
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script> <!-- Links to the external JavaScript file -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
